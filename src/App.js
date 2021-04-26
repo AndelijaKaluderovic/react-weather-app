@@ -5,7 +5,10 @@ export default function App() {
     <div className="App">
       <footer>
         This project was coded by
-        <a href="www.linkedin.com/in/andjelija-kaludjerovic" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/andjelija-kaludjerovic/"
+          target="_blank"
+        >
           {" "}
           Andelija Kaluderovic
         </a>{" "}
