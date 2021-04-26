@@ -11,6 +11,7 @@ export default function App() {
           <a
             href="https://www.linkedin.com/in/andjelija-kaludjerovic/"
             target="_blank"
+            rel="noreferrer"
           >
             {" "}
             Andelija Kaluderovic
@@ -19,6 +20,7 @@ export default function App() {
           <a
             href="https://github.com/AndelijaKaluderovic/react-weather-app"
             target="_blank"
+            rel="noreferrer"
           >
             GitHub
           </a>
