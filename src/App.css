@@ -1,0 +1,9 @@
+body {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  background-image: url(https://www.teahub.io/photos/full/256-2567614_photo-wallpaper-grass-the-sun-macro-sunset-nature.jpg);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.45);
+  background-size: cover;
+  background-blend-mode: darken;
+}
