@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function searchCity(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       city: response.data.main.name,
@@ -28,6 +28,7 @@ export default function Weather(props) {
       lat: response.data.coord.lat,
       lon: response.data.coord.lon,
       iconUrl: "https://openweathermap.org/img/wn/${weatherData.icon}@2x.png",
+      date: new Date(response.data.dt * 1000),
     });
   }
   if (weatherData.ready) {
@@ -82,6 +83,9 @@ export default function Weather(props) {
               <li>Wind speed {weatherData.windSpeed}</li>
               <li>
                 Sunrise/sunset {weatherData.sunrise} / {weatherData.sunset}
+              </li>
+              <li>
+                <FormattedDate date={weatherData.date} />
               </li>
             </ul>
           </div>
