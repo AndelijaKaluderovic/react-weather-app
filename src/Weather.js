@@ -23,11 +23,10 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       weatherMain: response.data.weather[0].main,
       description: response.data.weather[0].description,
-      icon: response.data.weather.icon,
       windSpeed: response.data.wind.speed,
       lat: response.data.coord.lat,
       lon: response.data.coord.lon,
-      iconUrl: "https://openweathermap.org/img/wn/${weatherData.icon}@2x.png",
+      icon: response.data.weather[0].icon,
       date: new Date(response.data.dt * 1000),
     });
   }
