@@ -5,7 +5,7 @@ export default function WeatherInfo(props) {
   return (
     <div clasNme="WeaterInfo">
       <div className="row">
-        <div className="col-4">
+        <div className="col-5">
           <h1>
             {props.data.city}, {props.data.country}
           </h1>
@@ -13,9 +13,9 @@ export default function WeatherInfo(props) {
             <div className="col-2">{Math.round(props.data.temperature)}°</div>
             <div className="col-4">
               <ul>
-                <li>max {props.data.maxTemp}°</li>
-                <li>Feels like {props.data.feelsLike}°</li>
-                <li>min {props.data.minTemp}°</li>
+                <li>max {Math.round(props.data.maxTemp)}°</li>
+                <li>Feels like {Math.round(props.data.feelsLike)}°</li>
+                <li>min {Math.round(props.data.minTemp)}°</li>
               </ul>
             </div>
             <div className="col-3">
@@ -30,14 +30,11 @@ export default function WeatherInfo(props) {
           <br />
           <ul>
             <li>Weather {props.data.description}</li>
-            <li>Relative humidity {props.data.humidity}</li>
-            <li>Visibility {props.data.visibility}</li>
-            <li>Pressure {props.data.pressure}</li>
-            <li>Clouds {props.data.clouds}</li>
-            <li>Wind speed {Math.round(props.data.windSpeed)}</li>
-            <li>
-              Sunrise/sunset {props.data.sunrise} / {props.data.sunset}
-            </li>
+            <li>Relative humidity {props.data.humidity} %</li>
+            <li>Wind speed {Math.round(props.data.windSpeed)} m/s</li>
+            <li>Visibility {props.data.visibility / 1000} km</li>
+            <li>Pressure {props.data.pressure} hPa</li>
+            <li>Clouds {props.data.clouds} %</li>
             <li>
               <FormattedDate date={props.data.date} />
             </li>
