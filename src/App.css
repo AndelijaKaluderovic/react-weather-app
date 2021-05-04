@@ -7,3 +7,7 @@ body {
   background-size: cover;
   background-blend-mode: darken;
 }
+footer {
+  text-align: center;
+  padding-top: 40px;
+}
