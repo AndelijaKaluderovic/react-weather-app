@@ -11,7 +11,7 @@ export default function WeatherInfo(props) {
             {props.data.city}, {props.data.country}
           </h1>
           <div className="row">
-            <div className="col-2">{Math.round(props.data.temperature)}°</div>
+            <div className="col-2">{Math.round(props.data.temperature)}°C</div>
             <div className="col-4">
               <ul>
                 <li>max {Math.round(props.data.maxTemp)}°</li>
