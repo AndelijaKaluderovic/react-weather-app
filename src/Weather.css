@@ -2,3 +2,24 @@
   list-style-type: none;
   padding: 0;
 }
+.Weather h2 {
+  font-size: 25px;
+  padding-top: 10px;
+}
+.form-control,
+.searchButton {
+  height: 25px;
+  margin: 20px 0px;
+  padding: 5px;
+}
+.form-control {
+  box-shadow: 2px 4px 10px rgba(248, 245, 245, 0.5);
+}
+.searchButton {
+  width: 30px;
+  background: transparent;
+  border: none;
+  margin-left: 0px;
+  position: relative;
+  bottom: 3px;
+}
