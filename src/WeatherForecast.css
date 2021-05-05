@@ -1,3 +1,6 @@
-.WeatherForecastIcon {
-  width: 10px;
+.WeatherForecast {
+  padding-left: 40px;
+}
+.WeatherForecast div .col-4 {
+  padding-top: 20px;
 }

@@ -1,13 +1,16 @@
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Yantramanav", sans-serif;
   color: white;
   background-image: url(https://www.teahub.io/photos/full/256-2567614_photo-wallpaper-grass-the-sun-macro-sunset-nature.jpg);
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.29);
+  background-color: rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-blend-mode: darken;
 }
 footer {
   text-align: center;
   padding-top: 40px;
+}
+.container {
+  max-width: 800px;
 }

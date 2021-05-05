@@ -4,7 +4,8 @@
 }
 .Weather h2 {
   font-size: 25px;
-  padding-top: 10px;
+  padding-top: 9px;
+  padding-left: 39px;
 }
 .form-control,
 .searchButton {
